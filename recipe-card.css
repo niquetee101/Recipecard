@@ -1,0 +1,98 @@
+/* Import Lato font from Google Fonts */
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,900');
+
+/* General Body Styling (Dark background for the whole page) */
+body {
+    background-color: #2b2b2b;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Main Recipe Card Container */
+main {
+    background: url('images/food-image.jpg') no-repeat center center;
+    background-size: cover;
+    width: 900px;
+    /* This big left padding pushes your text to the right side over the dark texture */
+    padding: 45px 45px 45px 380px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+    box-sizing: border-box;
+    position: relative;
+}
+
+/* Title Styling */
+h1 {
+    font-family: 'Lato', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: #ffffff;
+    margin-top: 0;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+/* Make time, serves, and level horizontal */
+.recipies-info {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.recipies-info p {
+    margin: 0;
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+
+/* Highlighted values color (#b5c640) */
+.recipies-info span {
+    color: #b5c640;
+    font-weight: 700;
+    margin-left: 4px;
+}
+
+/* "See Ingredients" Button Styling */
+.btn-primary {
+    background-color: transparent;
+    border: 2px solid #b5c640;
+    color: #ffffff;
+    padding: 6px 18px;
+    border-radius: 20px;
+    font-family: 'Lato', sans-serif;
+    font-size: 0.85rem;
+    cursor: pointer;
+    margin-bottom: 25px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #b5c640;
+    color: #2b2b2b;
+}
+
+/* Preparation Steps List */
+.prep-steps {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin: 0;
+}
+
+.step {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    line-height: 1.5;
+    color: #f0f0f0;
+    font-size: 0.9rem;
+    margin-bottom: 12px;
+}
